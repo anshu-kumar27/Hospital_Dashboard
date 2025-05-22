@@ -5,20 +5,25 @@ import Redirection from './pages/Redirection';
 import MainLoader from './components/MainLoader';
 import { useHospitalContext } from './context/HospitalContext';
 import SideBar from './components/SideBar';
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 
 function App() {
-  const { loading , data} = useHospitalContext();
+  const { loading, data } = useHospitalContext();
   const navigate = useNavigate()
-  useEffect(()=>{
-    if(!loading && data)
-    navigate('/dashboard')
-  },[data])
+  const [isAppLoading, setAppLoading] = useState<boolean | true>(true);
+  useEffect(() => {
+    console.log(loading, " ", data)
+    if (!loading && data) {
+      setAppLoading(false);
+      navigate('/dashboard')
+    }
+
+  }, [data, loading])
   return (
     <div className='flex flex-row bg-base-200'>
       <HospitalData />
 
-      {loading ? (
+      {isAppLoading ? (
         <MainLoader />
       ) : (
         <>
