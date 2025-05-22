@@ -12,10 +12,9 @@ function App() {
   const navigate = useNavigate()
   const [isAppLoading, setAppLoading] = useState<boolean | true>(true);
   useEffect(() => {
-    console.log(loading, " ", data)
+    navigate('/dashboard')
     if (!loading && data) {
       setAppLoading(false);
-      navigate('/dashboard')
     }
 
   }, [data, loading])
