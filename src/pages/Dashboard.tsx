@@ -11,7 +11,7 @@ import HospitalCard from "./Dashboard/HospitalCard";
 
 const Dashboard: React.FC = () => {
     const { data } = useHospitalContext();
-
+    if(!data) return;
     return (
         <>
             <div className="p-6 space-y-2 md:pr-8">

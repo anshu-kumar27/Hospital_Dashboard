@@ -8,11 +8,12 @@ import SideBar from './components/SideBar';
 import { useEffect } from 'react';
 
 function App() {
-  const { loading } = useHospitalContext();
+  const { loading , data} = useHospitalContext();
   const navigate = useNavigate()
   useEffect(()=>{
+    if(!loading && data)
     navigate('/dashboard')
-  },[])
+  },[data])
   return (
     <div className='flex flex-row bg-base-200'>
       <HospitalData />
