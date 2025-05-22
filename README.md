@@ -58,8 +58,7 @@ The dashboard consumes **GET** API endpoint for the data
 
 ```
 ├── src
-│   ├── components
-│   │   ├── reusable/               # Reusable UI components used across multiple pages
+│   ├── components                  # Reusable UI components used across multiple pages
 │   │   └── Graphs/                 # All graph-related components and chart utilities
 │   │
 │   ├── pages/                      # All main route components (Dashboard, Redirection, etc.)
@@ -70,8 +69,8 @@ The dashboard consumes **GET** API endpoint for the data
 │   ├── services/
 │   │   └── HospitalData.tsx        # Handles API call and updates HospitalContext accordingly
 │   │
-│   ├── types/
-│   │   └── index.ts                # Centralized definition of TypeScript types used across the app
+│   ├── types/                      # Centralized definition of TypeScript types used across the app
+│   │              
 │
 ├── package.json                    # Project dependencies and scripts
 └── README.md                       # Project overview and developer documentation
@@ -103,9 +102,7 @@ The project is structured with clear separation between pages, components, servi
   <tr>
     <td><img src="assets/phone_ss1.jpeg" alt="Phone View 1" height="300"/></td>
     <td><img src="assets/phone_ss2.jpeg" alt="Phone View 2" height="300"/></td>
-  </tr>
-  <tr>
-    <td><img src="assets/phone_ss3.jpeg" alt="Phone View 3" height="300"/></td>
+     <td><img src="assets/phone_ss3.jpeg" alt="Phone View 3" height="300"/></td>
     <td><img src="assets/phone_ss4.jpeg" alt="Phone View 4" height="300"/></td>
   </tr>
 </table>
@@ -113,11 +110,6 @@ The project is structured with clear separation between pages, components, servi
 ---
 
 ### 💻 Laptop View
+<img src="assets/laptop_ss1.png" alt="Laptop View 1" height="300"/>
+<img src="assets/laptop_ss2.png" alt="Laptop View 2" height="300"/>
 
-<table>
-  <tr>
-    <td><img src="assets/laptop_ss1.png" alt="Laptop View 1" height="300"/></td>
-    <td><img src="assets/laptop_ss2.png" alt="Laptop View 2" height="300"/></td>
-  </tr>
-</table>
->
