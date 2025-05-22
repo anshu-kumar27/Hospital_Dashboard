@@ -2,7 +2,7 @@
 
 A responsive, modern dashboard built using **React + Vite + Tailwind CSS + TypeScript**, this project fetches real-time hospital data via a REST API and visualizes it through interactive charts and graphs. It is optimized for performance, reusability, and clarity, while also integrating a global context for API state management.
 
-🔗 **Live Demo**: [https://your-dashboard-url.vercel.app](https://your-dashboard-url.vercel.app)
+🔗 **Live Demo**: https://hospital-dashboard-green.vercel.app/dashboard
 
 ---
 
